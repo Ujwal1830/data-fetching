@@ -34,3 +34,29 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Client Side Rendering
+
+First Client App loads, then it calls the API to fetch the information, then it sets the response to states and then renders/displays the data.
+
+## Client Side Rendering with SWR
+
+SWR stands for Stale While Revalidating, In this we don't need to use fetch function to fetch the data, we uses a hook useSWR to fetch the data.
+
+```bash
+npm install swr
+```
+
+It has some out-of-the-box features
+- It is Lightweight.
+- it workd in Realtime.
+- It has built in caching.
+
+## Server Side Rendering
+
+First fetched the data on server, then we renders the page on server, then we serves the rendered page to User and user can directly see the data. because of this there is no loading time.
+
+## Static Site Generation
+
+This renders at build time.
